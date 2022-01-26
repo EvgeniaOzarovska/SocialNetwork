@@ -1,0 +1,12 @@
+.bordered {
+  width: 40px;
+  height: 40px;
+  padding: 2px 5px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+
+  &:hover {
+    background-color: whitesmoke;
+    border-color: black;
+  }
+}

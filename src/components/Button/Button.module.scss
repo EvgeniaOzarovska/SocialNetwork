@@ -1,0 +1,77 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  border: 2px solid darkgrey;
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  background-color: lightsteelblue;
+  color: white;
+  cursor: pointer;
+
+  &:not(:disabled):hover {
+    background-color: cornflowerblue;
+    border-color: royalblue;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  &:disabled {
+    cursor: auto;
+    opacity: 0.5;
+  }
+
+  &.solid {
+    background-color: lightsteelblue;
+  }
+
+  &.outlined {
+    height: 30px;
+    margin-top: 12px;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: black;
+
+    &:not(:disabled):hover {
+      color: whitesmoke;
+      background-color: slategrey;
+      border-color: whitesmoke;
+    }
+
+    &:disabled {
+      cursor: auto;
+      opacity: 0.5;
+    }
+  }
+
+  &.link {
+    border: none;
+    background-color: whitesmoke;
+    height: 30px;
+    color: cornflowerblue;
+
+    &:hover {
+      background: transparent;
+      cursor: pointer;
+      color: royalblue;
+    }
+  }
+
+  &.mini {
+    width: 150px;
+    height: 30px;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: black;
+    margin: 5px 10px;
+
+    &:hover {
+      color: whitesmoke;
+      background-color: slategrey;
+      border-color: whitesmoke;
+    }
+  }
+}

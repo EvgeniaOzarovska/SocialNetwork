@@ -1,0 +1,34 @@
+.section {
+  padding: 10px;
+  width: 100%;
+
+  .header {
+    font-family: Vujahday Script, cursive;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 5px pink;
+    padding: 5px;
+  }
+
+    .searchInput {
+      width: 80%;
+      height: 30px;
+      padding: 5px;
+    }
+
+  .btn{
+    width: 20%;
+    height: 30px;
+  }
+  }
+
+  .blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .userListContainer {
+    overflow-y: auto;
+  }

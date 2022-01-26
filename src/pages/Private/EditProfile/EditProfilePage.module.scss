@@ -1,0 +1,71 @@
+.spinnerContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+
+  .header {
+    height: 50px;
+    padding-right: 35%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightslategray;
+    border-bottom: 2px solid black;
+
+    span {
+      font-weight: bold;
+      font-size: 20px;
+      color: whitesmoke;
+    }
+  }
+
+  .avaSection {
+    padding: 30px 0;
+  }
+
+  .changeAva {
+    display: block;
+    color: cornflowerblue;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+      background: transparent;
+      cursor: pointer;
+      color: darkblue;
+    }
+  }
+
+  .imageInput {
+    display: none;
+  }
+
+  .formChangePassword {
+    margin-top: 50px;
+
+    .input_icon {
+      display: flex;
+      align-items: center;
+
+      input {
+        margin-left: 35px;
+      }
+
+      span {
+        position: absolute;
+        right: 50px;
+        cursor: pointer;
+      }
+    }
+
+    .newPasswordError {
+      color: red;
+    }
+  }
+}

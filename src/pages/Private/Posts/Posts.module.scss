@@ -1,0 +1,85 @@
+.header {
+  font-family: Vujahday Script, cursive;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 5px pink;
+}
+
+.post_section {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 50px;
+
+  .post {
+    cursor: pointer;
+
+    .user_information {
+      height: 45px;
+      display: flex;
+      justify-content: flex-start;
+      padding: 5px;
+
+      .nick {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 5px;
+      }
+
+      .pic {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 5px;
+      }
+    }
+
+    .img_section {
+      padding: 10px 0;
+
+      .photo_post {
+        width: 100%;
+        height: 350px;
+      }
+
+      .post_text {
+        padding: 0 10px;
+      }
+    }
+
+    .icons {
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+
+      img {
+        margin: 0 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+          border-color: grey;
+        }
+      }
+    }
+  }
+}
+
+.spinnerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :global {
+    .spinner-border {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.wrapper {
+  height: 851px !important;
+  width: 393px !important;
+  transform: translate(-1px, -6px);
+
+  .background {
+    position: absolute;
+    z-index: -1;
+    top: -32px;
+    left: -23px;
+  }
+
+  & > div {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .spinnerContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :global(.spinner-border) {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
